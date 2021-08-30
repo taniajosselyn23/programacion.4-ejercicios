@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'serif';
+}
+
+.imagen{
+	width: 100px;
+	height: auto;
+	margin-top: 20px;
+	float: left;
+	margin-right: 15px;
+	margin-left: 20px;
+	border-radius: 50px;
+}
+
+#encabezado{
+	width: auto;
+	height: 133px;
+	border: 0px solid;
+	background: #20B2AA;
+}
+
+#encabezado #logo{
+	width: 500px;
+	height: auto;
+	border: 0px solid;
+	float: left;
+}
+
+#encabezado #logo h2{
+	color: #fff;
+}
+
+#encabezado .menu{
+	width: 790px;
+	float: right;
+	margin-top: 40px;
+	text-align: center;
+	border: 0px solid;
+	font-size: 25px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav li{
+	line-height: 2.5rem;
+	position: relative;
+}
+
+.menu ul{
+	position: absolute;
+}
+
+nav a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	transition: .4s;
+	padding: 10px 20px;
+}
+
+nav a:hover{
+	background: rgba(0, 0, 0, .5);
+}
+
+nav li ul{
+	float: right;
+	font-size: 17px;
+}
+/*Menu parte primer nivel*/
+.menu{
+	background: #20B2AA;
+	display: table;
+	height: auto;
+}
+
+.menu >li{
+	float: left;
+}
+
+nav li li{
+	background: #20B2AA;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .1s;
+	width: 155px;
+}
+
+nav	li:hover > ul > li{
+	max-height: 500px;
+	overflow: visible;
+}
+
+.menu > li > ul{
+	top: 100%;
+}
+
+.menu ul ul{
+	left: 100%;
+	top: 0;
+}
